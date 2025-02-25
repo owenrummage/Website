@@ -13,6 +13,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Owen Rummage</title>
+</svelte:head>
+
 <div class="flex max-w-screen-lg flex-col space-y-4">
 	<Heading />
 	<div class="h-2" />

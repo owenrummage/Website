@@ -12,6 +12,9 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Owen Rummage - Blog</title>
+</svelte:head>
 <div class="flex max-w-screen-lg flex-col space-y-4">
 	<Heading />
 

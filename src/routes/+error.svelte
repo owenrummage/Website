@@ -25,9 +25,19 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Owen Rummage - Error</title>
+</svelte:head>
+
 {#if page.status == 404}
 	<div class="flex flex-col items-center">
 		<p>The page cannot be found (404)</p>
+		<p class="mb-2 text-purple-500">---------------------------------</p>
+		<p class="text-center">{quotes[Math.floor(Math.random() * quotes.length)]}</p>
+	</div>
+{:else}
+	<div class="flex flex-col items-center">
+		<p>An error occurred</p>
 		<p class="mb-2 text-purple-500">---------------------------------</p>
 		<p class="text-center">{quotes[Math.floor(Math.random() * quotes.length)]}</p>
 	</div>
