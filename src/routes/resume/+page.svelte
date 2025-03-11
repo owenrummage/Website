@@ -79,7 +79,7 @@
 	<title>Owen Rummage - Resume</title>
 </svelte:head>
 
-<div class="flex max-w-screen-lg flex-col space-y-4">
+<div class="flex max-w-screen-lg flex-col space-y-4 p-4">
 	<Heading />
 	<div class="h-2" />
 	<h2 class="mt-6 text-xl font-bold">About Me</h2>
@@ -144,7 +144,7 @@
 	<hr />
 	<h2 class="mt-6 text-xl font-bold">Tools and Technologies</h2>
 
-	<div class="mt-6 grid grid-cols-3 gap-12">
+	<div class="mt-6 grid grid-cols-1 gap-12 md:grid-cols-4">
 		<div class="col-span-2">
 			<h3 class="font-bold">Infrastructure Tools</h3>
 			<ul class="list-inside list-disc">
@@ -166,7 +166,7 @@
 				{/each}
 			</ul>
 		</div>
-		<div class="col-span-1">
+		<div class="col-span-2">
 			<h3 class="font-bold">Programming Languages</h3>
 			<ul class="list-inside list-disc">
 				{#each skills.languages as item}
