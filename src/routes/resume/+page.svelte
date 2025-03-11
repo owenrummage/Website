@@ -79,7 +79,7 @@
 	<title>Owen Rummage - Resume</title>
 </svelte:head>
 
-<div class="flex max-w-screen-lg flex-col space-y-4 p-4">
+<div class="flex max-w-screen-lg flex-col space-y-4">
 	<Heading />
 	<div class="h-2" />
 	<h2 class="mt-6 text-xl font-bold">About Me</h2>

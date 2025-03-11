@@ -13,5 +13,5 @@
 			<a href="https://bsky.app/profile/rummage.cc">Bluesky</a>
 		</span>
 	</span>
-	<img src={ProfilePhoto} alt="Profile Photo" class="h-24 w-24 rounded-full" />
+	<img src={ProfilePhoto} alt="Profile Photo" class="hidden h-24 w-24 rounded-full md:block" />
 </div>
