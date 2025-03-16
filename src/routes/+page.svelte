@@ -2,6 +2,8 @@
 	import type { Repository } from '$lib/_types';
 	import Heading from '$lib/components/Heading.svelte';
 	import { onMount } from 'svelte';
+	import Time from 'svelte-time';
+
 	const endpoint = 'https://api.github.com/users/owenrummage/repos';
 	let repos: Repository[] = [];
 
@@ -21,11 +23,11 @@
 	<Heading />
 	<div class="h-2" />
 	<span class="text-neutral-800 dark:text-neutral-300">
-		Hello! I’m Owen Rummage, a 19 year old systems administrator and software enthusiast with a
-		lifelong passion for technology. Currently, I’m pursuing an Associate of Applied Sciences in
-		Computer Information Technology at Nashville State. I’ve been fascinated by computers since I
-		was 6 and have been a Linux user since I was 8, which sparked my interest in open-source
-		software and development.
+		Hello! I’m Owen Rummage, a systems administrator and software enthusiast with a lifelong passion
+		for technology. I was born <Time relative timestamp="2005-03-03" />. Currently, I’m pursuing an
+		Associate of Applied Sciences in Computer Information Technology at Nashville State. I’ve been
+		fascinated by computers since I was 6 and have been a Linux user since I was 8, which sparked my
+		interest in open-source software and development.
 	</span>
 	<span class="text-neutral-800 dark:text-neutral-300">
 		When I’m not studying or working on projects, I enjoy spending time doing homelab shenanigans,
