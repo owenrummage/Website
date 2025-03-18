@@ -11,6 +11,7 @@
 			<a href="https://github.com/owenrummage">GitHub</a>
 			<a href="https://www.linkedin.com/in/owen-rummage-335035245/">Linkedin</a>
 			<a href="https://bsky.app/profile/rummage.cc">Bluesky</a>
+			<a href="/blog">Blog</a>
 		</span>
 	</span>
 	<img src={ProfilePhoto} alt="Profile Photo" class="hidden h-24 w-24 rounded-full md:block" />

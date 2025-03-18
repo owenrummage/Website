@@ -1,8 +1,11 @@
 <script>
 	import Heading from '$lib/components/Heading.svelte';
 	import { onMount } from 'svelte';
+	import { formatDate } from '$lib/utils';
+
 	const endpoint = 'https://api.github.com/users/owenrummage/repos';
 	let repos = [];
+	let { data } = $props();
 
 	onMount(async function () {
 		const response = await fetch(endpoint);
@@ -15,12 +18,22 @@
 <svelte:head>
 	<title>Owen Rummage - Blog</title>
 </svelte:head>
-<div class="flex max-w-screen-lg flex-col space-y-4">
+<div class="flex max-w-screen-lg flex-col">
 	<Heading />
-
-	<span class="text-neutral-800 dark:text-neutral-300">
-		You have stumbled upon my blog. Here I will write my schizophrenic (joking) ramblings for all
-		the world to read. This isnt quite finished yet, but check back because it will be soon!
-	</span>
-	<span class="text-purple-800 dark:text-purple-500"> ~ Owen </span>
+	<div class="h-4" />
+	<h1 class="font-bold">All Posts</h1>
+	<ul>
+		{#each data.posts as post}
+			<li class="post">
+				<a href="/blog/{post.slug}" class="title"
+					>{post.title} <span class="font-bold text-white">/</span>
+					<span class="text-white">{formatDate(post.date)}</span>
+					<span class="font-bold text-white">/</span>
+					<span class="text-white">{post.description}</span></a
+				>
+			</li>
+		{/each}
+	</ul>
+	<div class="h-2" />
+	<p>~ Owen Rummage</p>
 </div>
