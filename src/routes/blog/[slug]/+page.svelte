@@ -33,6 +33,6 @@
 	}
 
 	article :global(pre) {
-		@apply my-4 rounded-md bg-white px-2 py-1 font-mono text-black;
+		@apply my-4 rounded-md bg-zinc-800 p-2 font-mono text-white;
 	}
 </style>
