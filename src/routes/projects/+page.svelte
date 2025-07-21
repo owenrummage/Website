@@ -41,19 +41,14 @@
 
 <Header />
 <main class="w-full max-w-3xl flex-1">
-	<section class="mb-8 space-y-4">
-		<h2 class="mb-2 text-2xl font-semibold">About Me</h2>
-		<p class="text-neutral-300">
-			Technologist with a strong foundation in networking, systems administration, and web
-			development, currently contributing to innovative solutions at NixLabs Networks. Experienced
-			in programming, automation, and creative production, with a proven ability to blend technical
-			expertise and artistic vision. Adept at tackling complex challenges, learning new
-			technologies, and collaborating with others to deliver impactful results.
-		</p>
-	</section>
-
 	<section class="mb-8">
 		<h2 class="mb-2 text-2xl font-semibold">Projects</h2>
+		<p class="text-neutral-300">
+			Here are some of the projects I've been working on. They range from web development and system
+			administration tools to creative solutions for various challenges. Each project represents a
+			learning experience and an opportunity to explore different technologies and approaches to
+			problem-solving.
+		</p>
 		<div class="grid grid-cols-1 gap-6 rounded-lg p-4 sm:grid-cols-2">
 			{#each projects as project (project.title)}
 				<a
